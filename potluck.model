@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<PotluckParty xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="potluck" xmi:id="_z39FAOrHEe64z71IcziqOw">
+  <games xmi:id="_YsRCAOvTEe6wkdgBIcTSZA">
+    <provider xmi:id="_ZR--MOvTEe6wkdgBIcTSZA"/>
+  </games>
+  <courses xmi:id="_040FEOrHEe64z71IcziqOw" name="main dish">
+    <dishes xmi:id="_2AuIUOrHEe64z71IcziqOw" name="roaseted lamb">
+      <provider xmi:id="_2tknQOrHEe64z71IcziqOw" name="howard"/>
+    </dishes>
+    <dishes xmi:id="_2YVXEOrHEe64z71IcziqOw" name="bbq wings">
+      <provider xmi:id="_3l59cOrHEe64z71IcziqOw" name="margret"/>
+    </dishes>
+  </courses>
+  <courses xmi:id="_4QTlUOrHEe64z71IcziqOw" name="appetizer">
+    <dishes xmi:id="_408jcOrHEe64z71IcziqOw" name="dim sum">
+      <provider xmi:id="_V1mPMOrIEe64z71IcziqOw" name="howard"/>
+    </dishes>
+  </courses>
+  <courses xmi:id="_9UGPUOrHEe64z71IcziqOw" name="dessert">
+    <dishes xmi:id="_Hh4R8OrIEe64z71IcziqOw" name="biscuit"/>
+  </courses>
+  <participant xmi:id="_1QoIIOrHEe64z71IcziqOw" name="howard"/>
+  <participant xmi:id="_NtJhYOrIEe64z71IcziqOw" name="margret"/>
+</PotluckParty>

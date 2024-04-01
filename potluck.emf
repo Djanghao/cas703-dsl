@@ -1,0 +1,52 @@
+@namespace(uri="potluck", prefix="")
+package potluck;
+
+class Drink{
+	attr String name;
+	val Participant provider;
+}
+
+class Game{
+	attr String name;
+	attr Station station;
+	val Participant provider;
+}
+
+enum Station {
+	station1;
+	station2;
+	station3;
+	station4;
+	station5;
+}
+
+class PotluckParty{
+	attr String name;
+	val Game[*] games;
+	val Drink[*] drinks;
+	val Course[*] courses;
+	val Participant[*] participant;
+}
+
+class Dish{
+	attr String name;
+	attr Station station;
+	val Participant provider;
+}
+
+class Course{
+	attr String name;
+	val Dish[*] dishes;
+}
+
+class Participant{
+	attr String name;
+	attr Dietary dietary;
+}
+enum Dietary{
+	general;
+	vergan;
+	glutenFree;
+	sugarFree;
+}
+
