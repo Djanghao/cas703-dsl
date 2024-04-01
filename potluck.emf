@@ -1,25 +1,6 @@
 @namespace(uri="potluck", prefix="")
 package potluck;
 
-class Drink{
-	attr String name;
-	val Participant provider;
-}
-
-class Game{
-	attr String name;
-	attr Station station;
-	val Participant provider;
-}
-
-enum Station {
-	station1;
-	station2;
-	station3;
-	station4;
-	station5;
-}
-
 class PotluckParty{
 	attr String name;
 	val Game[*] games;
@@ -28,10 +9,22 @@ class PotluckParty{
 	val Participant[*] participant;
 }
 
+class Drink{
+	attr String name;
+	ref Participant[*]#provides provided;
+}
+
+class Game{
+	attr String name;
+	attr Station station;
+	ref Participant[*]#hosts hosted;
+}
+
 class Dish{
 	attr String name;
 	attr Station station;
-	val Participant provider;
+	attr Dietary dietary;
+	ref Participant[*]#offers offered;
 }
 
 class Course{
@@ -42,11 +35,23 @@ class Course{
 class Participant{
 	attr String name;
 	attr Dietary dietary;
+	ref Dish[*]#offered offers;
+	ref Game[*]#hosted hosts;
+	ref Drink[*]#provided provides;
 }
+
+enum Station {
+	station1;
+	station2;
+	station3;
+	station4;
+	station5;
+}
+
+
 enum Dietary{
 	general;
 	vergan;
 	glutenFree;
 	sugarFree;
 }
-
