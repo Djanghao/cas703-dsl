@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
-<PotluckParty xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="potluck"/>
+<PotluckParty xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="potluck" xmi:id="_BitsIPBrEe6PLs0cveY0dA" name="party">
+  <games xmi:id="_WMcJMPBrEe6PLs0cveY0dA" name="card" hosted="_EAkOoPBrEe6PLs0cveY0dA"/>
+  <drinks xmi:id="_VQ68IPBrEe6PLs0cveY0dA" name="coke" provided="_EAkOoPBrEe6PLs0cveY0dA"/>
+  <courses xmi:id="_UQ3NUPBrEe6PLs0cveY0dA" name="main">
+    <dishes xmi:id="_m73T4PBrEe6PLs0cveY0dA" name="lamb" offered="_EAkOoPBrEe6PLs0cveY0dA"/>
+  </courses>
+  <participant xmi:id="_EAkOoPBrEe6PLs0cveY0dA" name="howard" offers="_m73T4PBrEe6PLs0cveY0dA" hosts="_WMcJMPBrEe6PLs0cveY0dA" provides="_VQ68IPBrEe6PLs0cveY0dA"/>
+</PotluckParty>
