@@ -1,0 +1,67 @@
+grammar org.xtext.example.mydsl.MyDsl with org.eclipse.xtext.common.Terminals
+
+generate myDsl "http://www.xtext.org/example/mydsl/MyDsl"
+
+PotluckParty:
+  {PotluckParty} 'PotluckParty' '{'
+    'Courses' '{' courses+=Course* '}'
+    'Participants' '{' participants+=Participant* '}'
+    'Games' '{' games+=Game* '}'
+    'Drinks' '{' drinks+=Drink* '}'
+  '}';
+
+//NamedElement:
+//  name=ID;
+
+NamedElement:
+name=STRING;
+
+//StationSlot:
+//  'StationSlot' '{'
+//    'slot' slot=INT
+//  '}';
+
+Game:
+  'Game' '{'
+    'host' host=[Participant]
+  '}';
+
+Drink:
+  'Drink' '{'
+    'types' types+=DrinkType (',' types+=DrinkType)*
+  '}';
+
+enum DrinkType:
+  Wine | Beer | Coke | Spring | GreenTea | BlackTea;
+
+Participant:
+  'Participant' '{'
+//    'name' name=ID
+	'name' name=STRING
+    'dietaryCategory' dietaryCategory=DietaryCategory
+  '}';
+
+Dish:
+  'Dish' '{'
+//    'name' name=ID
+	'name' name=STRING
+//    'course' course=[Course]
+    'provider' provider=[Participant]
+    'dietaryCategory' dietaryCategory=DietaryCategory
+    'stationSlot' stationSlot= StationSlot
+  '}';
+
+Course:
+  'Course' '{'
+    'type' type=CourseType
+    'dishes' '{' dishes+=Dish* '}'
+  '}';
+
+enum CourseType:
+  Appetizer | Main | Dessert;
+
+enum DietaryCategory:
+  General | SugarFree | Vegan | GlutenFree;
+
+enum StationSlot:
+	Counter1 | Counter2 | Counter3| Counter4| CounteR5 | Backyard;
