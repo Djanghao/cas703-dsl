@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="ASCII"?>
-<PotluckParty xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="potluck" xmi:id="_BitsIPBrEe6PLs0cveY0dA" name="party">
-  <games xmi:id="_WMcJMPBrEe6PLs0cveY0dA" name="card" hosted="_EAkOoPBrEe6PLs0cveY0dA"/>
-  <drinks xmi:id="_VQ68IPBrEe6PLs0cveY0dA" name="coke" provided="_EAkOoPBrEe6PLs0cveY0dA"/>
-  <courses xmi:id="_UQ3NUPBrEe6PLs0cveY0dA" name="main">
-    <dishes xmi:id="_m73T4PBrEe6PLs0cveY0dA" name="lamb" offered="_EAkOoPBrEe6PLs0cveY0dA"/>
+<PotluckParty xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="potluck" xmi:id="_uESCgPUVEe6cZ852iIFTUA" name="partyparty">
+  <games xmi:id="_mIvS0PUWEe6cZ852iIFTUA" name="game1" eventTime="2024-04-07T16:00:00.000-0400" hosted="_YFrnwPUWEe6cZ852iIFTUA"/>
+  <drinks xmi:id="_fn-7kPUWEe6cZ852iIFTUA" name="coke" eventTime="2024-04-07T16:00:00.000-0400" provided="_YFrnwPUWEe6cZ852iIFTUA"/>
+  <courses xmi:id="_yR8VwPUVEe6cZ852iIFTUA" name="main" eventTime="2024-04-07T16:00:00.000-0400">
+    <dishes xmi:id="_TIRSkPUWEe6cZ852iIFTUA" name="dish1" eventTime="2024-04-07T16:00:00.000-0400" offered="_YFrnwPUWEe6cZ852iIFTUA"/>
+    <dishes xmi:id="_Tc43sPUWEe6cZ852iIFTUA" name="dish2"/>
   </courses>
-  <participant xmi:id="_EAkOoPBrEe6PLs0cveY0dA" name="howard" offers="_m73T4PBrEe6PLs0cveY0dA" hosts="_WMcJMPBrEe6PLs0cveY0dA" provides="_VQ68IPBrEe6PLs0cveY0dA"/>
+  <participant xmi:id="_YFrnwPUWEe6cZ852iIFTUA" name="howard" offers="_TIRSkPUWEe6cZ852iIFTUA" hosts="_mIvS0PUWEe6cZ852iIFTUA" provides="_fn-7kPUWEe6cZ852iIFTUA"/>
 </PotluckParty>

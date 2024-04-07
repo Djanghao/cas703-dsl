@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="potluck" nsURI="potluck" nsPrefix="">
-  <eClassifiers xsi:type="ecore:EClass" name="PotluckParty">
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PotluckPartyElement" abstract="true"
+      eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="station" eType="#//Station"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="eventTime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PotluckParty" eSuperTypes="#//NamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="games" upperBound="-1"
         eType="#//Game" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="drinks" upperBound="-1"
@@ -12,31 +19,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="participant" upperBound="-1"
         eType="#//Participant" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Drink">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="provided" upperBound="-1"
-        eType="#//Participant" eOpposite="#//Participant/provides"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Game">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="station" eType="#//Station"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hosted" upperBound="-1"
-        eType="#//Participant" eOpposite="#//Participant/hosts"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Dish">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="station" eType="#//Station"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dietary" eType="#//Dietary"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="offered" upperBound="-1"
-        eType="#//Participant" eOpposite="#//Participant/offers"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Course">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="dishes" upperBound="-1"
-        eType="#//Dish" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Participant">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Participant" eSuperTypes="#//NamedElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dietary" eType="#//Dietary"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="offers" upperBound="-1"
         eType="#//Dish" eOpposite="#//Dish/offered"/>
@@ -45,17 +28,34 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="provides" upperBound="-1"
         eType="#//Drink" eOpposite="#//Drink/provided"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Drink" eSuperTypes="#//PotluckPartyElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="provided" upperBound="-1"
+        eType="#//Participant" eOpposite="#//Participant/provides"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Game" eSuperTypes="#//PotluckPartyElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hosted" upperBound="-1"
+        eType="#//Participant" eOpposite="#//Participant/hosts"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Course" eSuperTypes="#//PotluckPartyElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dishes" upperBound="-1"
+        eType="#//Dish" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Dish" eSuperTypes="#//PotluckPartyElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dietary" eType="#//Dietary"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="offered" upperBound="-1"
+        eType="#//Participant" eOpposite="#//Participant/offers"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Station">
-    <eLiterals name="station1"/>
-    <eLiterals name="station2" value="1"/>
-    <eLiterals name="station3" value="2"/>
-    <eLiterals name="station4" value="3"/>
-    <eLiterals name="station5" value="4"/>
+    <eLiterals name="station1" value="1"/>
+    <eLiterals name="station2" value="2"/>
+    <eLiterals name="station3" value="3"/>
+    <eLiterals name="station4" value="4"/>
+    <eLiterals name="station5" value="5"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Dietary">
-    <eLiterals name="general"/>
-    <eLiterals name="vergan" value="1"/>
-    <eLiterals name="glutenFree" value="2"/>
-    <eLiterals name="sugarFree" value="3"/>
+    <eLiterals name="general" value="1"/>
+    <eLiterals name="vergan" value="2"/>
+    <eLiterals name="glutenFree" value="3"/>
+    <eLiterals name="sugarFree" value="4"/>
   </eClassifiers>
 </ecore:EPackage>
