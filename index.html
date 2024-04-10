@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://img.icons8.com/emoji/48/party-popper.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <title>Potluck Party</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      h1,
+      h2,
+      h3,
+      p,
+      a,
+      button {
+        font-family: "Cormorant Garamond", serif;
+      }
+      .page {
+        font-size: 14px;
+        background-color: #1e1f22;
+        background-size: cover;
+      }
+      .page::-webkit-scrollbar {
+        display: none;
+      }
+      .site-header {
+        width: 100vw;
+        top: 0;
+        background-color: #0a0a0b;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        opacity: 1;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        z-index: 100;
+      }
+      .site-header-icon {
+        width: 60px;
+        margin-left: 50px;
+        margin-bottom: 35px;
+      }
+      .site-header-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .site-header-title {
+        font-size: 51px;
+        color: #f5f5f5;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .site-header-nav__list {
+        display: flex;
+        justify-content: center;
+        column-gap: 5px;
+      }
+
+      .site-header-nav__item-link {
+        font-size: 16px;
+        color: #f5f5f5;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .site-header__action {
+        background-color: #2c2d31;
+        font-size: 16px;
+        padding: 5px 10px;
+        margin-right: 60px;
+        margin-bottom: 35px;
+        border: #c0c8de 1px solid;
+        color: #f5f5f5;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+      @media (max-width: 768px) {
+        .site-header-icon,
+        .site-header__action {
+          display: none;
+        }
+        .site-header {
+          width: 100vw;
+        }
+      }
+      .hr-gradient {
+        height: 5px;
+        margin-top: 30px;
+        width: 80%;
+        color: #f5f5f5;
+      }
+
+      .home-section {
+        padding-top: 250px;
+        padding-bottom: 100px;
+      }
+      .home-section__title {
+        font-size: 36px;
+        color: #f5f5f5;
+        text-align: center;
+      }
+      .home-section__content:first-child {
+        font-size: 24px;
+        color: #f5f5f5;
+        text-align: center;
+        margin: 50px;
+      }
+
+      .home-section__content:last-child {
+        font-size: 24px;
+        color: #f5f5f5;
+        text-align: center;
+        margin: 50px;
+      }
+      .menu {
+        font-size: 38px;
+        font-weight: bold;
+        color: #f5f5f5;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .guests {
+        font-size: 38px;
+        font-weight: bold;
+        color: #f5f5f5;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .home-section-image {
+        background-image: url("https://images.pexels.com/photos/696214/pexels-photo-696214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+      }
+      .reservation-details__container {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        padding: 20px;
+        height: 100%;
+      }
+
+      .items__list {
+        width: 30%;
+        text-align: center;
+      }
+
+      .items__list h2 {
+        font-size: 2em;
+        font-weight: 200;
+        margin-bottom: 40px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      ul li {
+        margin-bottom: 30px;
+        padding: 10px 15px;
+        border-left: 3px solid #ebf4fe;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        transition: transform 0.2s;
+      }
+
+      ul li:hover {
+        transform: translateX(10px);
+      }
+
+      ul li:last-child {
+        margin-bottom: 0;
+      }
+
+      .learn-more:hover {
+        background-color: white;
+        color: #333333;
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        .reservation-details__container,
+        .reservation-form__container {
+          flex-direction: column;
+          align-items: center;
+          padding: 0%;
+        }
+
+        .items__list {
+          width: 80%;
+          margin-bottom: 20px;
+        }
+
+        .items__list:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .menu-panel {
+        width: 80vw;
+        background-color: #2c2d31;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.65);
+        margin: 60px auto;
+        padding: 50px;
+        border-radius: 10px;
+        align-items: center;
+      }
+      .guest-panel {
+        width: 80vw;
+        background-color: #2c2d31;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.65);
+        margin: 60px auto;
+        padding: 50px;
+        border-radius: 10px;
+        align-items: center;
+      }
+      .reservation-form-panel {
+        width: 80vw;
+        background-color: #2c2d31;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.65);
+        margin: 60px auto;
+        padding: 50px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .reservation-form__title {
+        font-size: 34px;
+        color: #f5f5f5;
+        margin-bottom: 20px;
+      }
+
+      .reservation-form__container {
+        display: flex;
+        width: 80vw;
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 20px 0;
+        align-items: center;
+      }
+
+      .reservation-form__group {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+      }
+
+      .reservation-form__group label {
+        margin-bottom: 5px;
+        color: #f5f5f5;
+      }
+
+      .reservation-form__group input {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #c0c8de;
+        background-color: #333;
+        color: #fff;
+      }
+
+      .reservation-form__submit-btn {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .footer-bar {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 30px;
+        background-color: #0a0a0b;
+        color: #fff;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .hr-footer-gradient {
+        height: 5px;
+        width: 80%;
+        color: #f5f5f5;
+        margin: 8px 10px 0 0;
+      }
+      .fade-in {
+        opacity: 0;
+        transition: opacity 2.8s ease;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="page">
+    <header class="site-header">
+      <img
+        class="site-header-icon"
+        src="https://img.icons8.com/emoji/48/party-popper.png"
+        alt=""
+      />
+      <nav class="site-header-nav">
+        <h1 class="site-header-title">
+          PARTYPARTY
+        </h1>
+        <div class="site-header-nav__list">
+          <div class="site-header-nav__item">
+            <a class="site-header-nav__item-link" href="/About">About</a>
+          </div>
+          <div class="site-header-nav__item">
+            <a class="site-header-nav__item-link" href="/Menu">Menu</a>
+          </div>
+          <div class="site-header-nav__item">
+            <a class="site-header-nav__item-link" href="/Guests">Guests</a>
+          </div>
+          <div class="site-header-nav__item">
+            <a class="site-header-nav__item-link" href="/Contact">Contact</a>
+          </div>
+        </div>
+        <hr class="hr-gradient" />
+      </nav>
+
+      <button class="site-header__action">Reservations</button>
+    </header>
+    <main class="app">
+      <section class="home-section fade-in">
+        <p class="home-section__content">
+          CONGRATS!👏 &nbsp; YOU ARE INVITED TO OUR PARTY
+        </p>
+        <h1 class="home-section__title">Welcome to our Potluck Party event!</h1>
+        <p class="home-section__content">
+          Join us as we countdown to the most anticipated event of the year.
+        </p>
+      </section>
+      <div class="home-section-image"></div>
+      <section class="menu-panel fade-in">
+        <p class="menu">MENU</p>
+        <div class="reservation-details__container">
+          <div class="items__list">
+            <h2>FOOD</h2>
+            <ul>
+              <li>Salad [Margaret]</li>
+              <li>Fish [Margaret]</li>
+              <li>Lamb [Awan]</li>
+              <li>Cake [Howard]</li>
+            </ul>
+          </div>
+          <div class="items__list">
+            <h2>DRINK</h2>
+            <ul>
+                    <li>coke [Howard]</li>
+                    <li>Sprite [Awan]</li>
+                    <li>Beer [Gaofeng]</li>
+            </ul>
+          </div>
+          <div class="items__list">
+            <h2>GAMES</h2>
+            <ul>
+                    <li>boardgame [Howard]</li>
+                    <li>Limbo [Gaofeng]</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="guest-panel fade-in">
+        <p class="guests">GUESTS</p>
+        <div class="reservation-details__container">
+          <div class="items__list">
+            <ul>
+                    <li>Howard [general]</li>
+                    <li>Margaret [sugarFree]</li>
+                    <li>Awan [general]</li>
+                    <li>Gaofeng [vergan]</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="reservation-form-panel fade-in">
+        <h2 class="reservation-form__title">MAKE YOUR RESERVATION</h2>
+        <form class="reservation-form__container" class="reservation-form">
+          <div class="reservation-form__group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="reservation-form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="reservation-form__group">
+            <label for="dietary">Dietary Preferences</label>
+            <input type="text" id="dietary" name="dietary" />
+          </div>
+          <button type="submit" class="reservation-form__submit-btn">
+            Submit Reservation
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer-bar">
+      <hr class="hr-footer-gradient" />
+      ©POTLUCK 2024 All Rights Reserved.
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const scrollToSection = (selector) => {
+          document
+            .querySelector(selector)
+            .scrollIntoView({ behavior: "smooth" });
+        };
+
+        document.addEventListener("scroll", () => {
+          const footerBar = document.querySelector(".footer-bar");
+          const siteHeader = document.querySelector(".site-header");
+          const { scrollHeight, scrollTop } = document.documentElement;
+          const windowHeight = window.innerHeight;
+          const scrollPosition = window.scrollY || scrollTop;
+
+          if (scrollHeight - (scrollPosition + windowHeight) < 100) {
+            footerBar.style.transform = "translateY(0)";
+            footerBar.style.opacity = "1";
+          } else {
+            footerBar.style.transform = "translateY(100%)";
+            footerBar.style.opacity = "0";
+          }
+
+          if (scrollPosition > 100) {
+            siteHeader.style.transform = "translateY(-100%)";
+            siteHeader.style.opacity = "0";
+          } else {
+            siteHeader.style.transform = "translateY(0)";
+            siteHeader.style.opacity = "1";
+          }
+        });
+
+        function scrollToJustAfterHeader() {
+          window.scrollTo({ top: 110, behavior: "smooth" });
+        }
+
+        document
+          .querySelector('.site-header-nav__item-link[href="/About"]')
+          .addEventListener("click", (e) => {
+            e.preventDefault();
+            scrollToJustAfterHeader();
+          });
+        document
+          .querySelectorAll(".site-header-nav__item-link")
+          .forEach((item) => {
+            item.addEventListener("click", (e) => {
+              e.preventDefault();
+              const target = item.getAttribute("href");
+              let targetSection;
+              if (target === "/Menu") {
+                targetSection = ".menu-panel";
+              } else if (target === "/Contact") {
+                targetSection = ".reservation-form-panel";
+              } else if (target === "/Guests") {
+                targetSection = ".guest-panel";
+              }
+              scrollToSection(targetSection);
+            });
+          });
+
+        document
+          .querySelector(".site-header__action")
+          .addEventListener("click", () => {
+            scrollToSection("#reservation-form-container");
+          });
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+        const fadeInElements = document.querySelectorAll(".fade-in");
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        });
+
+        fadeInElements.forEach((element) => {
+          observer.observe(element);
+        });
+      });
+    </script>
+  </body>
+</html>
