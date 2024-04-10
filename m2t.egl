@@ -219,7 +219,7 @@
         }
 
         .items__list {
-          width: 80%;
+          width: 95%;
           margin-bottom: 20px;
         }
 
