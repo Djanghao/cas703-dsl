@@ -1,0 +1,94 @@
+
+// Custom Validation & Auto-Fix
+
+// Ensure the total number of guests does not exceed the host's venue capacity 
+context PotluckParty {
+     constraint MaxParticipants {
+        check: self.participants->size() <= 15
+        message: "The number of participants (" + self.participants->size().toString() + ") should be less than or equal to 15."
+    }
+}
+
+// Ensure Main course's' dishes number equal or exceed guest number
+context PotluckParty {
+    constraint SufficientMainDishes {
+        check: self.courses->select(c | c.type.name = 'Main').dishes->size() >= self.participants->size()
+        message: "The number of main course dishes should be greater than or equal to the number of participants (" + 
+                 self.participants->size().toString() + ")."
+    }
+}
+
+// Ensure if there is a guests with a 'Vegan' dietary requirement, at least one main dish must be 'Vegan'
+context PotluckParty {
+    constraint SufficientVeganDishesForGuests {
+        guard: self.participants.exists(p | p.dietaryCategory.name = 'Vegan')
+        check: self.courses->select(c | c.type.name = 'Main').dishes->exists(d | d.dietaryCategory.name = 'Vegan')
+        message: "There are at least a guests with a 'vegan' dietary requirement, at least one main dish must be 'Vegan'."
+    } 
+}
+
+// Ensure if there is a guests with a 'SugarFree' dietary requirement, at least one main dish must be 'sugar free'
+context PotluckParty {
+    constraint SufficientSugarFreeDishesForGuests {
+        guard: self.participants.exists(p | p.dietaryCategory.name = 'SugarFree')
+        check: self.courses->select(c | c.type.name = 'Main').dishes->exists(d | d.dietaryCategory.name = 'SugarFree')
+        message: "There are at least a guests with a 'sugar free' dietary requirement, at least one main dish must be 'sugar free'."
+    } 
+}
+
+// Ensure if there is a guests with a 'GlutenFree' dietary requirement, at least one main dish must be 'gluten free'
+context PotluckParty {
+    constraint SufficientGlutenFreeDishesForGuests {
+        guard: self.participants.exists(p | p.dietaryCategory.name = 'GlutenFree')
+        check: self.courses->select(c | c.type.name = 'Main').dishes->exists(d | d.dietaryCategory.name = 'GlutenFree')
+        message: "There are at least a guests with a 'gluten free' dietary requirement, at least one main dish must be 'gluten free'."
+    }
+}
+
+// Ensure there are at least two appetizer dishes
+context PotluckParty {
+    constraint SufficientAppetizerDishes {
+        check: self.courses->select(c | c.type.name = 'Appetizer').dishes->size() >= 2
+        message: "The number of Appetizer course dishes (" + self.courses->select(c | c.type.name = 'Appetizer').dishes->size().toString() + ") should be at least two."
+    }
+}
+
+// Ensure there are at least two dessert dishes
+context PotluckParty {
+    constraint SufficientDessertDishes {
+        check: self.courses->select(c | c.type.name = 'Dessert').dishes->size() >= 2
+        message: "The number of dessert course dishes (" + self.courses->select(c | c.type.name = 'Dessert').dishes->size().toString() + ") should be at least two."
+    }
+}
+
+// ensure assign a host for the game section
+context PotluckParty {
+    constraint GameHostAssigned {
+        check: self.games.exists(g | g.host <> null)
+        message: "The game section needs a host."
+    }
+}
+
+// ensure assign a host for the drinks station 
+context PotluckParty {
+    constraint DrinkHostAssigned {
+        check: self.drinks.exists(g | g.host <> null)
+        message: "The drink station needs a host."
+    }
+}
+
+// Each dish's name should start with upper letter, if not, warning and auto-fix '
+context Dish {
+    constraint NameStartsWithUppercase {
+        check: self.name.substring(0, 1) == self.name.substring(0, 1).toUpperCase()
+        message: "The dish name '" + self.name + "' should start with an uppercase letter."
+
+        fix {
+            title: "Capitalize the first letter of the dish name"
+            do {
+                self.name = self.name.substring(0, 1).toUpperCase() + self.name.substring(1);
+            }
+        }
+    }
+}
+

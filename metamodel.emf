@@ -14,7 +14,7 @@ class PotluckParty extends NamedElement{
 	val Game[*] games;
 	val Drink[*] drinks;
 	val Course[*] courses;
-	val Participant[*] participant;
+	val Participant[*] participants;
 }
 
 class Participant extends NamedElement{

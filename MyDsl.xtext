@@ -3,65 +3,56 @@ grammar org.xtext.example.mydsl.MyDsl with org.eclipse.xtext.common.Terminals
 generate myDsl "http://www.xtext.org/example/mydsl/MyDsl"
 
 PotluckParty:
-  {PotluckParty} 'PotluckParty' '{'
-    'Courses' '{' courses+=Course* '}'
-    'Participants' '{' participants+=Participant* '}'
-    'Games' '{' games+=Game* '}'
-    'Drinks' '{' drinks+=Drink* '}'
+  'PotluckParty' '{'
+    'courses' '{' courses+=Course+ '}'
+    'participants' '{' participants+=Participant+ '}'
+    ('games' '{' games+=Game+ '}')
+    ('drinks' '{' drinks+=Drink+ '}')?
   '}';
 
-//NamedElement:
-//  name=ID;
-
-NamedElement:
-name=STRING;
-
-//StationSlot:
-//  'StationSlot' '{'
-//    'slot' slot=INT
-//  '}';
-
-Game:
-  'Game' '{'
-    'host' host=[Participant]
+Course:
+  'Course' '{'  
+    'type' type=CourseType
+    'dishes' '{' dishes+=Dish* '}'
   '}';
-
-Drink:
-  'Drink' '{'
-    'types' types+=DrinkType (',' types+=DrinkType)*
-  '}';
-
-enum DrinkType:
-  Wine | Beer | Coke | Spring | GreenTea | BlackTea;
 
 Participant:
   'Participant' '{'
-//    'name' name=ID
-	'name' name=STRING
+    'name' name=STRING
     'dietaryCategory' dietaryCategory=DietaryCategory
   '}';
 
 Dish:
   'Dish' '{'
-//    'name' name=ID
-	'name' name=STRING
-//    'course' course=[Course]
+    'type' type=CourseType 
+    'name' name=STRING
     'provider' provider=[Participant]
     'dietaryCategory' dietaryCategory=DietaryCategory
-    'stationSlot' stationSlot= StationSlot
+    'stationslot' stationslot=StationSlot?
   '}';
 
-Course:
-  'Course' '{'
-    'type' type=CourseType
-    'dishes' '{' dishes+=Dish* '}'
+Drink:
+  'Drink' '{'
+    ('name' name=STRING)?
+    'types' types+=DrinkType (',' types+=DrinkType)*
+    'stationslot' stationslot=StationSlot
   '}';
 
-enum CourseType:
-  Appetizer | Main | Dessert;
+Game:
+  'Game' '{'
+    'name' name=STRING
+    'host' host=[Participant]
+    'stationslot' stationslot=StationSlot
+  '}';
 
 enum DietaryCategory:
   General | SugarFree | Vegan | GlutenFree;
 
+enum DrinkType:
+  Wine | Beer | Coke | Spring | GreenTea | BlackTea;
+
+enum CourseType:
+  Appetizer | Main | Dessert;
+
 enum StationSlot:
-	Counter1 | Counter2 | Counter3| Counter4| CounteR5 | Backyard;
+  Counter1 | Counter2 | Counter3 | Counter4 | Counter5 | Backyard;

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_DFci0PVQEe6cZ852iIFTUA" type="Ecore" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_DNJGQPVQEe6cZ852iIFTUA" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DNKUYPVQEe6cZ852iIFTUA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNK7cPVQEe6cZ852iIFTUA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNK7cfVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNK7cvVQEe6cZ852iIFTUA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNLigPVQEe6cZ852iIFTUA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNLigfVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNLigvVQEe6cZ852iIFTUA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNLig_VQEe6cZ852iIFTUA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNLihPVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNLihfVQEe6cZ852iIFTUA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="potluck.ecore#//NamedElement"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DNJGQfVQEe6cZ852iIFTUA" x="44" y="728" width="136"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_DNLihvVQEe6cZ852iIFTUA" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DNLiiPVQEe6cZ852iIFTUA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNLiifVQEe6cZ852iIFTUA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNLiivVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNLii_VQEe6cZ852iIFTUA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNLijPVQEe6cZ852iIFTUA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNLijfVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNLijvVQEe6cZ852iIFTUA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNLij_VQEe6cZ852iIFTUA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNLikPVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNLikfVQEe6cZ852iIFTUA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="potluck.ecore#//PotluckPartyElement"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DNLih_VQEe6cZ852iIFTUA" x="84" y="584" width="132"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_DNLikvVQEe6cZ852iIFTUA" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DNLilPVQEe6cZ852iIFTUA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNLilfVQEe6cZ852iIFTUA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNLilvVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNLil_VQEe6cZ852iIFTUA"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_WbZD0PVQEe6cZ852iIFTUA" value="0.23076923076923078"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNLimPVQEe6cZ852iIFTUA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNLimfVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNLimvVQEe6cZ852iIFTUA"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_WbZq4PVQEe6cZ852iIFTUA" value="0.23076923076923078"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNLim_VQEe6cZ852iIFTUA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNLinPVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNLinfVQEe6cZ852iIFTUA"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_WbZq4fVQEe6cZ852iIFTUA" value="0.23076923076923078"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="potluck.ecore#//PotluckParty"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DNLik_VQEe6cZ852iIFTUA" x="284" y="72" width="100"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_DNLinvVQEe6cZ852iIFTUA" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DNLioPVQEe6cZ852iIFTUA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNLiofVQEe6cZ852iIFTUA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNLiovVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNLio_VQEe6cZ852iIFTUA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNLipPVQEe6cZ852iIFTUA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNLipfVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNLipvVQEe6cZ852iIFTUA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNLip_VQEe6cZ852iIFTUA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMJkPVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMJkfVQEe6cZ852iIFTUA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="potluck.ecore#//Participant"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DNLin_VQEe6cZ852iIFTUA" x="692" y="640"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_DNMJkvVQEe6cZ852iIFTUA" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DNMJlPVQEe6cZ852iIFTUA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMJlfVQEe6cZ852iIFTUA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMJlvVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMJl_VQEe6cZ852iIFTUA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMJmPVQEe6cZ852iIFTUA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMJmfVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMJmvVQEe6cZ852iIFTUA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMJm_VQEe6cZ852iIFTUA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMJnPVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMJnfVQEe6cZ852iIFTUA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="potluck.ecore#//Drink"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DNMJk_VQEe6cZ852iIFTUA" x="720" y="184" width="72"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_DNMJnvVQEe6cZ852iIFTUA" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DNMJoPVQEe6cZ852iIFTUA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMJofVQEe6cZ852iIFTUA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMJovVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMJo_VQEe6cZ852iIFTUA"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_dF0UcPVQEe6cZ852iIFTUA" value="0.23076923076923078"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMJpPVQEe6cZ852iIFTUA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMJpfVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMJpvVQEe6cZ852iIFTUA"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_dF0UcfVQEe6cZ852iIFTUA" value="0.23076923076923078"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMJp_VQEe6cZ852iIFTUA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMJqPVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMJqfVQEe6cZ852iIFTUA"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_dF0UcvVQEe6cZ852iIFTUA" value="0.23076923076923078"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="potluck.ecore#//Game"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DNMJn_VQEe6cZ852iIFTUA" x="284" y="248"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_DNMwoPVQEe6cZ852iIFTUA" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DNMwovVQEe6cZ852iIFTUA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMwo_VQEe6cZ852iIFTUA" type="7001" collapsed="true">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMwpPVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMwpfVQEe6cZ852iIFTUA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMwpvVQEe6cZ852iIFTUA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMwp_VQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMwqPVQEe6cZ852iIFTUA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMwqfVQEe6cZ852iIFTUA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMwqvVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMwq_VQEe6cZ852iIFTUA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="potluck.ecore#//Course"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DNMwofVQEe6cZ852iIFTUA" x="92" y="176" width="60"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_DNMwrPVQEe6cZ852iIFTUA" type="2001" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DNMwrvVQEe6cZ852iIFTUA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMwr_VQEe6cZ852iIFTUA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMwsPVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMwsfVQEe6cZ852iIFTUA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMwsvVQEe6cZ852iIFTUA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMws_VQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMwtPVQEe6cZ852iIFTUA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMwtfVQEe6cZ852iIFTUA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMwtvVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMwt_VQEe6cZ852iIFTUA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="potluck.ecore#//Dish"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DNMwrfVQEe6cZ852iIFTUA" x="200" y="376" width="72" height="60"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_DNMwuPVQEe6cZ852iIFTUA" type="2005" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DNMwuvVQEe6cZ852iIFTUA" type="5005"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMwu_VQEe6cZ852iIFTUA" type="7011">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMwvPVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMwvfVQEe6cZ852iIFTUA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMwvvVQEe6cZ852iIFTUA" type="7012">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMwv_VQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMwwPVQEe6cZ852iIFTUA"/>
+    </children>
+    <element xmi:type="ecore:EEnum" href="potluck.ecore#//Station"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DNMwufVQEe6cZ852iIFTUA" x="1380" y="228"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_DNMwwfVQEe6cZ852iIFTUA" type="2005" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DNMww_VQEe6cZ852iIFTUA" type="5005"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMwxPVQEe6cZ852iIFTUA" type="7011">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMwxfVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMwxvVQEe6cZ852iIFTUA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_DNMwx_VQEe6cZ852iIFTUA" type="7012">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DNMwyPVQEe6cZ852iIFTUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DNMwyfVQEe6cZ852iIFTUA"/>
+    </children>
+    <element xmi:type="ecore:EEnum" href="potluck.ecore#//Dietary"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DNMwwvVQEe6cZ852iIFTUA" x="1408" y="76"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_DFci0fVQEe6cZ852iIFTUA"/>
+  <element xmi:type="ecore:EPackage" href="potluck.ecore#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_DOJy4PVQEe6cZ852iIFTUA" type="4004" source="_DNLihvVQEe6cZ852iIFTUA" target="_DNJGQPVQEe6cZ852iIFTUA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOJy4fVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOJy4vVQEe6cZ852iIFTUA" points="[13, 3, 14, -74]$[13, 54, 14, -23]$[2, 72, 3, -5]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOEPVQEe6cZ852iIFTUA" id="(0.25225225225225223,0.96)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOEfVQEe6cZ852iIFTUA" id="(0.5073529411764706,0.8813559322033898)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOUyAPVQEe6cZ852iIFTUA" type="4003" source="_DNLikvVQEe6cZ852iIFTUA" target="_DNMJnvVQEe6cZ852iIFTUA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOUyA_VQEe6cZ852iIFTUA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOUyBPVQEe6cZ852iIFTUA" x="-33" y="24"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOVZEPVQEe6cZ852iIFTUA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOVZEfVQEe6cZ852iIFTUA" x="-4" y="19"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOUyAfVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="potluck.ecore#//PotluckParty/games"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOUyAvVQEe6cZ852iIFTUA" points="[0, 0, 55, -231]$[-55, 231, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPG1IvVQEe6cZ852iIFTUA" id="(0.32,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPG1I_VQEe6cZ852iIFTUA" id="(0.4888888888888889,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOX1UPVQEe6cZ852iIFTUA" type="4003" source="_DNLikvVQEe6cZ852iIFTUA" target="_DNMJkvVQEe6cZ852iIFTUA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOYcYPVQEe6cZ852iIFTUA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOYcYfVQEe6cZ852iIFTUA" x="2" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOYcYvVQEe6cZ852iIFTUA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOYcY_VQEe6cZ852iIFTUA" x="-9" y="140"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOX1UfVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="potluck.ecore#//PotluckParty/drinks"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOX1UvVQEe6cZ852iIFTUA" points="[7, 0, -371, -91]$[378, 0, 0, -91]$[378, 91, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPG1KPVQEe6cZ852iIFTUA" id="(0.9333333333333333,0.40384615384615385)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPG1KfVQEe6cZ852iIFTUA" id="(0.4883720930232558,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOZDcPVQEe6cZ852iIFTUA" type="4003" source="_DNLikvVQEe6cZ852iIFTUA" target="_DNMwoPVQEe6cZ852iIFTUA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOZDc_VQEe6cZ852iIFTUA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOZDdPVQEe6cZ852iIFTUA" x="5" y="-13"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOZDdfVQEe6cZ852iIFTUA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOZDdvVQEe6cZ852iIFTUA" x="13" y="-15"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOZDcfVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="potluck.ecore#//PotluckParty/courses"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOZDcvVQEe6cZ852iIFTUA" points="[-16, -12, 163, -64]$[-188, -12, -9, -64]$[-188, 52, -9, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPG1IPVQEe6cZ852iIFTUA" id="(0.16,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPG1IfVQEe6cZ852iIFTUA" id="(0.49019607843137253,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOZqgPVQEe6cZ852iIFTUA" type="4003" source="_DNLikvVQEe6cZ852iIFTUA" target="_DNLinvVQEe6cZ852iIFTUA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOZqg_VQEe6cZ852iIFTUA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOZqhPVQEe6cZ852iIFTUA" x="-20" y="25"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOZqhfVQEe6cZ852iIFTUA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOZqhvVQEe6cZ852iIFTUA" x="40" y="17"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOZqgfVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="potluck.ecore#//PotluckParty/participant"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOZqgvVQEe6cZ852iIFTUA" points="[10, 4, -350, -516]$[10, 228, -350, -292]$[362, 228, 2, -292]$[362, 520, 2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPG1JPVQEe6cZ852iIFTUA" id="(0.7466666666666667,0.9230769230769231)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPG1JfVQEe6cZ852iIFTUA" id="(0.26,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOaRkPVQEe6cZ852iIFTUA" type="4004" source="_DNLikvVQEe6cZ852iIFTUA" target="_DNJGQPVQEe6cZ852iIFTUA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOaRkfVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOaRkvVQEe6cZ852iIFTUA" points="[0, 0, 227, -634]$[-227, 0, 0, -634]$[-227, 632, 0, -2]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPG1JvVQEe6cZ852iIFTUA" id="(0.0,0.46153846153846156)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPG1J_VQEe6cZ852iIFTUA" id="(0.13829787234042554,0.03389830508474576)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DObfsPVQEe6cZ852iIFTUA" type="4002" source="_DNLinvVQEe6cZ852iIFTUA" target="_DNMwrPVQEe6cZ852iIFTUA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DObfs_VQEe6cZ852iIFTUA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DObftPVQEe6cZ852iIFTUA" x="-233" y="12"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DObftfVQEe6cZ852iIFTUA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DObftvVQEe6cZ852iIFTUA" x="-128" y="79"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DObfsfVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="potluck.ecore#//Participant/offers"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DObfsvVQEe6cZ852iIFTUA" points="[0, 12, 409, 241]$[-420, 12, -11, 241]$[-420, -229, -11, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOHPVQEe6cZ852iIFTUA" id="(0.0,0.423728813559322)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOHfVQEe6cZ852iIFTUA" id="(0.83,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOd78PVQEe6cZ852iIFTUA" type="4002" source="_DNLinvVQEe6cZ852iIFTUA" target="_DNMJnvVQEe6cZ852iIFTUA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOd78_VQEe6cZ852iIFTUA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOd79PVQEe6cZ852iIFTUA" x="-178" y="16"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOd79fVQEe6cZ852iIFTUA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOd79vVQEe6cZ852iIFTUA" x="-155" y="18"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOd78fVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="potluck.ecore#//Participant/hosts"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOd78vVQEe6cZ852iIFTUA" points="[0, 0, 392, 340]$[0, -51, 392, 289]$[-319, -51, 73, 289]$[-392, -51, 0, 289]$[-392, -88, 0, 252]$[-392, -104, 0, 236]$[-392, -112, 0, 228]$[-392, -340, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOIPVQEe6cZ852iIFTUA" id="(0.17,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOIfVQEe6cZ852iIFTUA" id="(0.7333333333333333,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOejAPVQEe6cZ852iIFTUA" type="4002" source="_DNLinvVQEe6cZ852iIFTUA" target="_DNMJkvVQEe6cZ852iIFTUA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOejA_VQEe6cZ852iIFTUA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOejBPVQEe6cZ852iIFTUA" x="-107" y="22"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOejBfVQEe6cZ852iIFTUA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOejBvVQEe6cZ852iIFTUA" y="18"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOejAfVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="potluck.ecore#//Participant/provides"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOejAvVQEe6cZ852iIFTUA" points="[0, 0, -45, 67]$[45, -67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOIvVQEe6cZ852iIFTUA" id="(0.83,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOI_VQEe6cZ852iIFTUA" id="(0.7441860465116279,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOfKEPVQEe6cZ852iIFTUA" type="4004" source="_DNLinvVQEe6cZ852iIFTUA" target="_DNJGQPVQEe6cZ852iIFTUA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOfKEfVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOfKEvVQEe6cZ852iIFTUA" points="[-7, 0, 624, -58]$[-7, 65, 624, 7]$[-629, 65, 2, 7]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOHvVQEe6cZ852iIFTUA" id="(0.75,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOH_VQEe6cZ852iIFTUA" id="(0.9787234042553191,0.4915254237288136)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOfxIPVQEe6cZ852iIFTUA" type="4002" source="_DNMJkvVQEe6cZ852iIFTUA" target="_DNLinvVQEe6cZ852iIFTUA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOfxI_VQEe6cZ852iIFTUA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOfxJPVQEe6cZ852iIFTUA" x="-141" y="27"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOfxJfVQEe6cZ852iIFTUA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOfxJvVQEe6cZ852iIFTUA" x="-30" y="19"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOfxIfVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="potluck.ecore#//Drink/provided"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOfxIvVQEe6cZ852iIFTUA" points="[0, 0, 51, -67]$[-51, 67, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOEvVQEe6cZ852iIFTUA" id="(0.4883720930232558,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOE_VQEe6cZ852iIFTUA" id="(0.66,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOgYMPVQEe6cZ852iIFTUA" type="4004" source="_DNMJkvVQEe6cZ852iIFTUA" target="_DNLihvVQEe6cZ852iIFTUA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOgYMfVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOgYMvVQEe6cZ852iIFTUA" points="[0, -6, 540, -376]$[-552, -6, -12, -376]$[-552, 370, -12, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOFPVQEe6cZ852iIFTUA" id="(0.0,0.5769230769230769)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOFfVQEe6cZ852iIFTUA" id="(0.7297297297297297,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOg_QPVQEe6cZ852iIFTUA" type="4002" source="_DNMJnvVQEe6cZ852iIFTUA" target="_DNLinvVQEe6cZ852iIFTUA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOg_Q_VQEe6cZ852iIFTUA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOg_RPVQEe6cZ852iIFTUA" x="14" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOg_RfVQEe6cZ852iIFTUA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOg_RvVQEe6cZ852iIFTUA" y="-12"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOg_QfVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="potluck.ecore#//Game/hosted"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOg_QvVQEe6cZ852iIFTUA" points="[-10, 0, -398, -353]$[-10, 353, -398, 0]$[350, 353, -38, 0]$[386, 353, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOFvVQEe6cZ852iIFTUA" id="(0.4888888888888889,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOF_VQEe6cZ852iIFTUA" id="(0.02,0.22033898305084745)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOg_R_VQEe6cZ852iIFTUA" type="4004" source="_DNMJnvVQEe6cZ852iIFTUA" target="_DNLihvVQEe6cZ852iIFTUA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOg_SPVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOg_SfVQEe6cZ852iIFTUA" points="[-1, 0, 140, -312]$[-141, 0, 0, -312]$[-141, 312, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOGPVQEe6cZ852iIFTUA" id="(0.022222222222222223,0.46153846153846156)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOGfVQEe6cZ852iIFTUA" id="(0.4594594594594595,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOi0cPVQEe6cZ852iIFTUA" type="4003" source="_DNMwoPVQEe6cZ852iIFTUA" target="_DNMwrPVQEe6cZ852iIFTUA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOi0c_VQEe6cZ852iIFTUA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOi0dPVQEe6cZ852iIFTUA" x="-3" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOi0dfVQEe6cZ852iIFTUA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOi0dvVQEe6cZ852iIFTUA" x="-5" y="17"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOi0cfVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="potluck.ecore#//Course/dishes"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOi0cvVQEe6cZ852iIFTUA" points="[2, 0, -84, -175]$[74, 0, -12, -175]$[74, 175, -12, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOGvVQEe6cZ852iIFTUA" id="(0.9666666666666667,0.4807692307692308)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOG_VQEe6cZ852iIFTUA" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOjbgPVQEe6cZ852iIFTUA" type="4004" source="_DNMwoPVQEe6cZ852iIFTUA" target="_DNLihvVQEe6cZ852iIFTUA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOjbgfVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOjbgvVQEe6cZ852iIFTUA" points="[-6, 0, 22, -356]$[-6, 128, 22, -228]$[-28, 356, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPG1KvVQEe6cZ852iIFTUA" id="(0.08333333333333333,0.9230769230769231)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPG1K_VQEe6cZ852iIFTUA" id="(0.09009009009009009,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOkCkPVQEe6cZ852iIFTUA" type="4002" source="_DNMwrPVQEe6cZ852iIFTUA" target="_DNLinvVQEe6cZ852iIFTUA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOkCk_VQEe6cZ852iIFTUA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOkClPVQEe6cZ852iIFTUA" x="1" y="13"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DOkClfVQEe6cZ852iIFTUA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DOkClvVQEe6cZ852iIFTUA" y="17"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOkCkfVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="ecore:EReference" href="potluck.ecore#//Dish/offered"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOkCkvVQEe6cZ852iIFTUA" points="[-10, 0, -436, -242]$[-10, 252, -436, 10]$[426, 252, 0, 10]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOJPVQEe6cZ852iIFTUA" id="(0.66,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOJfVQEe6cZ852iIFTUA" id="(0.0,0.6440677966101694)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DOkpoPVQEe6cZ852iIFTUA" type="4004" source="_DNMwrPVQEe6cZ852iIFTUA" target="_DNLihvVQEe6cZ852iIFTUA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_DOkpofVQEe6cZ852iIFTUA" fontName=".AppleSystemUIFont"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DOkpovVQEe6cZ852iIFTUA" points="[0, 12, 78, -184]$[-78, 12, 0, -184]$[-78, 196, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOJvVQEe6cZ852iIFTUA" id="(0.0,0.2)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DPGOJ_VQEe6cZ852iIFTUA" id="(0.2882882882882883,0.0)"/>
+  </edges>
+</notation:Diagram>
